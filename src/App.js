@@ -1,10 +1,13 @@
 import './App.css';
 import Counter from "./components/Counter";
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
 
 function App() {
   return (
     <div className="App">
-      <Counter/>
+      <ErrorBoundary>
+        <Counter/>
+      </ErrorBoundary>
     </div>
   );
 }
